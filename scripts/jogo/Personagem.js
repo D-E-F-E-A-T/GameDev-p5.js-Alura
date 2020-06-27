@@ -1,42 +1,33 @@
 //
-class Personagem{
-  constructor(imagem){
-    this.imagem = imagem;
-   this.matrix = [
-     [0,0],
-     [220,0],
-     [440,0],
-     [660,0],
-     [0,270],
-     [220,270],
-     [440,270],
-     [660,270],
-     [0,540],
-     [220,540],
-     [440,540],
-     [660,540],
-     [0,810],
-     [220,810],
-     [440,810],
-     [660,810],
-   ]
-    this.frameAtual = 0;
-  }
-  
-  exibe(){
-    //o 1º parâmetro é a imagem da personagem 'imagemPersonagem'
-    //o 2º parâmetro são os eixos x e y (0,0), de onde a imagem vai aparecer na tela
-    //o 3º parâmetro é a largura e altura 220,270 da imagem na tela
-    //o 4º parâmetro é a posição da imagem na tela, x e y, mas dentro da imagem da personagem 0,0,220,270
-    image(this.imagem, 0, height -135, 110, 135, this.matrix[this.frameAtual][0], this.matrix[this.frameAtual][1], 220, 270);
+class Personagem extends Animacao{
+  constructor(matrix, imagem, x, largura, altura, largSprite, altSprite){
+    super(matrix, imagem, x, largura, altura, largSprite, altSprite)
     
-    this.animaPersonagem();
+    this.yInicial = height - this.altura;
+    this.y = this.yInicial;
+    this.velPulo = 0;
+    this.gravidade = 3;
+  }
+
+  pula(){
+    this.velPulo = -30;
   }
   
-  animaPersonagem(){
-    this.frameAtual++;
-    if(this.frameAtual >= this.matrix.length - 1){
-      this.frameAtual = 0;
+  aplicaGravidade(){
+    this.y = this.y + this.velPulo;
+    this.velPulo = this.velPulo + this.gravidade;
+    
+    if(this.y > this.yInicial){
+      this.y = this.yInicial;
     }
+  }
+  
+  colidindo(inimigo){
+    //precisão é necessária devido ao tamanho do quadrado da personagem ser um pouco maior, sendo assim colide antes da hora. Com a precisão considera-se o contorno da própria personagem
+     const precisao = .7
+    //função nativa do p5.js que confere os valores de quadrado da bruxa e fotinha são iguais, se sim, colide.
+    const colisao = collideRectRect(this.x, this.y, this.largura * precisao, this.altura * precisao, inimigo.x, inimigo.y, inimigo.largura * precisao, inimigo.altura * precisao);
+    
+    return colisao;
   }
 }
