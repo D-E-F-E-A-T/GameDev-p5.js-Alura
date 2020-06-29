@@ -8,11 +8,13 @@ class Cenario{
     this.x1 = 0; //iniciando a imagem no zero
     this.x2 = width; //iniciando a imagens exatamente onde a outra termina
   }
+  
   //método para exibir o fundo (background) na tela
   exibe(){
     image(this.imagem, this.x1, 0, width, height);
     image(this.imagem, this.x2, 0, width, height);
   }
+  
   //método para movimentar o background na tela
   move(){
     this.x1 = this.x1 - this.velocidade;
