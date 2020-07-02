@@ -1,4 +1,4 @@
-<h4>Imersão GameDev JavaScript</h4>
+<h3>Imersão GameDev JavaScript - Alura</h3>
 
 Curso gratuito promovido pela Alura/Caelum quanto ao desenvolvimento de jogos em JavaScrpt. O curso foi ministrado em 5 vídeo-aulas ensinando os códigos, sprites, imagens dos personagens e sons do jogo (trilha, pulo, etc.)
 
