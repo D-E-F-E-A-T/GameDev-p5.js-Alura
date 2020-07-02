@@ -6,7 +6,7 @@ Codificação realizada no p5.js Web Editor utilizando #JavaScript. Com a codifi
 
 **Personagens do jogo: Hipsta, Gotinha, Gotinha Voadora, Troll.**
 
-[![Personagens](Personagens "Personagens")](https://imgur.com/a/rv4VmWb "Personagens")
+<img src="https://i.imgur.com/2S3ULTS.png">
 
 - Aula 1: Animações básicas e trilha sonora:
 	- Criado duas classes: Cenario, que refere-se apenas ao cenário, background do jogo e Personagem, que refere-se aos comandos da personagem;
@@ -37,8 +37,8 @@ Ao final da aula foi disponibilizado no GitHub, o certificado para o aluno reali
 
 *"O jogo ainda possui algumas alterações que desejo realizar, como aumentar a vida a medida que a personagem percorre a a floresta, assim como mudar de cenário e incluir outros inimigos."*
 
-[![Tela do Jogo](Tela do Jogo "Tela do Jogo")](https://imgur.com/a/dnVnbER "Tela do Jogo")
+<img src="https://i.imgur.com/4YZVqYQ.jpg">
 
 **Jogo da Bruxa Hipsta:**
 
-`<iframe src="https://editor.p5js.org/pleiterson/embed/1RMkKmkOm"></iframe>`
+<iframe src="https://editor.p5js.org/pleiterson/embed/1RMkKmkOm"></iframe>
