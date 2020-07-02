@@ -1,5 +1,5 @@
 //classe para gerenciar o botão da tela inicial, assim podemos chamar ele em outras telas do jogo
-class Button{
+class Button {
   constructor(texto, x, y){
     this.texto = texto;
     this.x = x;

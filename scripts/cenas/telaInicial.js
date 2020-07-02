@@ -1,5 +1,5 @@
 //classe para carregar as cenas dos jogo de modo geral
-class TelaInicial{
+class TelaInicial {
   constructor(){
     
   }

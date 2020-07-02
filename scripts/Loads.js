@@ -8,7 +8,10 @@ function preload() {
   imagemInimigoVoador = loadImage('imagens/inimigos/gotinha-voadora.png'); //informando o local onde o arquivo de imagem do inimigo está, gotinha voadora
   imagemTelaInicial = loadImage('imagens/cenario/telaInicial.png'); //informando o local onde o arquivo de imagem da tela inicial está
   fonteTelaInicial = loadFont('imagens/assets/fonteTelaInicial.otf'); //informando o local onde o arquivo de fonte da tela inicial está
+  imagemVida = loadImage('imagens/assets/coracao.png'); //informando o local onde o arquivo de imagem da vida está
   
   somDoJogo = loadSound('sons/trilha_jogo.mp3'); //informando o local onde o arquivo de som do jogo está, trilha sonora
   somPulo = loadSound('sons/somPulo.mp3'); //informando o local onde o arquivo de som do pulo da personagem está
+  
+  fita = loadJSON('fita/fita.json'); //informando o local onde o arquivo de fita.json está
 }

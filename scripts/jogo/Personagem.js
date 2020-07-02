@@ -8,6 +8,7 @@ class Personagem extends Animacao {
     this.gravidade = 6;
     this.alturaPulo = -50;
     this.pulos = 0; //variável apra calcular a quantidade de pulos
+    this.invencivel = false;
   }
 
   //método para que a personagem pule os inimigos
@@ -30,10 +31,22 @@ class Personagem extends Animacao {
     }
   }
 
+  imortal(){
+    this.invencivel = true;
+    setTimeout(() => {
+      this.invencivel = false;
+    }, 1000); //definindo quantos segundos ela ficará invencível
+  }
+  
   //método para verificar se a personagem está colidindo nos inimigos
   colidindo(inimigo) {
+    //se for invencivel retorna falso enão tira mais vidas
+    if (this.invencivel){
+      return false;
+    }
+    
     const precisao = 0.7; //precisão é necessária devido ao tamanho do quadrado da personagem ser um pouco maior, sendo assim colide antes da hora. Com a precisão considera-se o contorno da própria personagem
-
+    
     //função do p5.js que confere os valores de quadrado da bruxa e fotinha são iguais, se sim, colide.
     const colisao = collideRectRect(
       this.x,

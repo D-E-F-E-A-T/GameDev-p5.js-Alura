@@ -8,6 +8,7 @@ let imagemGameOver; //imagem de game over quando colidir com a personagem
 let imagemTelaInicial; //imagem da tela inicial do jogo
 let fonteTelaInicial; //fonte da tela inicial do jogo
 let botao; //botão para a tela inicial
+let imagemVida; //imagem do ícone de vida da personagem
 
 let cenario;
 let somDoJogo; //som da trilha sonora do jogo
@@ -19,8 +20,10 @@ let inimigoVoador;
 let score; //pontuação do gamer enquanto joga com a bruxinha
 let jogo; //variável para instanciar a classe Jogo
 let cenaAtual = 'telaInicial'; //mostrando o cenário atual em tela
-let cenas; //
-let telaInicial; //
+let cenas;
+let telaInicial;
+let vida;
+let fita;
 
 const matrixInimigo = [
   [0, 0],
