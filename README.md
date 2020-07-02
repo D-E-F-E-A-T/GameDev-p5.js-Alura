@@ -39,7 +39,7 @@ Codificação realizada no p5.js Web Editor utilizando #JavaScript. Com a codifi
 
 Ao final da aula foi disponibilizado no GitHub, o certificado para o aluno realizar a alteração de seu nome e com o iframe do game desenvolvido.
 
-*O jogo ainda possui algumas alterações que desejo realizar, como aumentar a vida a medida que a personagem percorre a a floresta, assim como mudar de cenário e incluir outros inimigos.*
+*O jogo ainda possui algumas alterações que desejo realizar, como aumentar a vida a medida que a personagem percorre a a floresta, assim como mudar de cenário e incluir outros inimigos, etc.*
 
 **Jogo da Bruxa Hipsta:**
 https://editor.p5js.org/pleiterson/full/1RMkKmkOm
